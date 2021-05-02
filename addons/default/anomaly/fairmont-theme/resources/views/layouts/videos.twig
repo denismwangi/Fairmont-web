@@ -1,0 +1,36 @@
+{% htmlcompress %}
+<!doctype html>
+
+<!--[if lt IE 7]>
+<html class="nojs ms lt_ie7" lang="en"><![endif]-->
+<!--[if IE 7]>
+<html class="nojs ms ie7" lang="en"><![endif]-->
+<!--[if IE 8]>
+<html class="nojs ms ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]>
+<html class="nojs ms" lang="en"><![endif]-->
+
+<html lang="{{ config('app.locale') }}">
+
+<head>
+    {% include "theme::partials/metadata" %}
+</head>
+
+<body>
+
+{% include "theme::partials/header" %}
+
+{% include "theme::pages/videos/videos" %}
+
+{% include "theme::partials/footer" %} 
+{% include "theme::partials/assets" %} 
+
+{# {{ asset_add("jquery2.js", "theme::assets/js/jquery.js") }}
+{{ asset_add("html5gallery.js","theme::assets/js/html5gallery.js") }}
+
+{{ asset_script('jquery2.js') }}
+{{ asset_script("html5gallery.js") }} #}
+
+</body>
+</html>
+{% endhtmlcompress %}

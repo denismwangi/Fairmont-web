@@ -1,0 +1,36 @@
+{% htmlcompress %}
+<!doctype html>
+
+<!--[if lt IE 7]>
+<html class="nojs ms lt_ie7" lang="en"><![endif]-->
+<!--[if IE 7]>
+<html class="nojs ms ie7" lang="en"><![endif]-->
+<!--[if IE 8]>
+<html class="nojs ms ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]>
+<html class="nojs ms" lang="en"><![endif]-->
+
+<html lang="{{ config('app.locale') }}">
+
+<head>
+    {% include "theme::partials/metadata" %}
+</head>
+
+<body>
+  {% include "theme::partials/preloader" %}
+{% include "theme::partials/header" %}
+
+ {% include "theme::pages/home/slider" %}
+{% include "theme::pages/home/about-section" %}
+{% include "theme::pages/home/why-choose-us" %}
+{% include "theme::pages/home/classes" %}
+{% include "theme::pages/home/levels" %}
+{% include "theme::pages/home/schedules" %}
+{% include "theme::pages/home/enroll" %}
+
+{% include "theme::partials/footer" %}
+{% include "theme::partials/assets" %}
+
+</body>
+</html>
+{% endhtmlcompress %}
